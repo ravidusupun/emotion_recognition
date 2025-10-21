@@ -3,17 +3,27 @@ Hate Speech Detection using Deep Learning
 This repository presents a comparative study of deep learning models—Bi-LSTM, 1D CNN (TextCNN), and fine-tuned XLM-RoBERTa—for binary text classification: 'Hatespeech' vs. 'Neutral'. The models are specifically configured to address the inherent class imbalance in the dataset.1. Project Overview and StructureThe core components of the project are the data preprocessing script, the training scripts for the three models, and the output artifacts.
 
 ├── Bilstm_model_training_testing.py        # PyTorch: Bi-LSTM Model Training & Evaluation
+
 ├── cnn_model_training_testing.py           # PyTorch: 1D CNN (TextCNN) Model Training & Evaluation
+
 ├── huggingface_model_trainging_testing.py  # Hugging Face: XLM-RoBERTa Fine-Tuning Script
+
 ├── preprocessing.py                        # Data Cleaning and Preparation Script
+
 |
 ├── hatespeech_vs_neutral.xlsx - Sheet1.csv # Raw Input Dataset
+
 ├── cleaned_dataset.csv                     # Cleaned Dataset (Output of preprocessing.py)
+
 |
 ├── bilstm_model.pt                         # Saved Bi-LSTM Model Weights
+
 ├── textcnn_model.pt                        # Saved TextCNN Model Weights
+
 ├── vocab.pkl                               # Vocabulary object for PyTorch models
+
 ├── label_encoder.pkl                       # LabelEncoder object
+
 └── README.md                               
 
 2. Environment and Setup2.1 PrerequisitesEnsure you have Python 3.8+ installed.2.2 InstallationClone the Repository:Bashgit clone 
